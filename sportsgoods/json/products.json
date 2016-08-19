@@ -1,0 +1,10 @@
+[
+  {"name":"Product #1","description":"A product","category":"Caregory #1","price":500,"imgsrc":"images/TB1_50x50.jpg"},
+  {"name":"Product #2","description":"B product","category":"Caregory #1","price":300,"imgsrc":"images/TB1_400x400.jpg"},
+  {"name":"Product #3","description":"C product","category":"Caregory #2","price":800,"imgsrc":"images/TB2_50x50.jpg"},
+  {"name":"Product #4","description":"E product","category":"Caregory #2","price":200,"imgsrc":"images/TB2_400x400.jpg"},
+  {"name":"Product #5","description":"F product","category":"Caregory #3","price":555,"imgsrc":"images/TB3_50x50.jpg"},
+  {"name":"Product #6","description":"G product","category":"Caregory #3","price":1550,"imgsrc":"images/TB3_400x400.jpg"},
+  {"name":"Product #7","description":"H product","category":"Caregory #4","price":2200,"imgsrc":"images/TB4_50x50.jpg"},
+  {"name":"Product #8","description":"I product","category":"Caregory #4","price":5300,"imgsrc":"images/TB4_400x400.jpg"}
+]
