@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link href="../css/base.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+     <script type="text/javascript" src="../js/jquery.validate.js"></script>
+    <script type="text/javascript" src="../js/jquery.metadata.js"></script>
+    <script type="text/javascript">
+    $(function(){
+    	$("#form1").validate({
+    		onfocusout:function(element) {$(element).valid();}
+    	}); 
+    })    	   	
+    </script>
+    <style type="text/css">		
+		label{position: absolute;left:285px;width: 100px;}
+		.error {    padding-left: 16px;     margin-left: 2px;     color:red;   
+		/*背景图片（校验未通过的’×’图标）*/    
+		background: url(../pages/reg3.png) no-repeat 0px 0px;    
+		font-family:Verdana, Geneva, sans-serif;    font-size:11px;}/*验证通过样式*/
+		input.valid{ background:#FFC;  padding:2px;}
+		select.valid{ background:#FFC; padding:2px;}
+		.valid {    padding-left: 16px;     margin-left: 2px;    /*背景图片(校验通过的’√’图标)*/    
+		background: url(../pages/reg4.png) no-repeat 0px 0px;    
+		font-family:Verdana, Geneva, sans-serif;    /*color:#00F;*/    font-size:11px;}
+</style>
+</head>
+<body>
+<div class="login">
+<!--页眉--------------------------------------------------------------------------------->
+    <div class="header">
+        <div class="inner">
+            <a href="../index.html"></a>
+        </div>
+    </div>
+    <div class="main inner">
+        <form class="login-box">
+            <div class="title">欢迎加入<span>L</span><small>og in</small></div>
+            <div class="cont clearfix">
+                <div class="left fl">
+                    <h2>注册新用户</h2>
+                    <div class="email"><span></span><input type="email" name="email" id="email" class="email" placeholder="邮箱例如：shimin@XXX.COM" required/></div>
+                    <div class="name"><span></span><input type="text" placeholder="昵称" required></div>
+                    <div class="password"><span></span><input type="password" id="password1" name="password1" class="{required:true,minlength:6}"  placeholder="密码" required></div>
+                    <div class="password"><span></span><input type="password" id="password2" name="password2" class="{required:true,equalTo:'#password1'}" placeholder="确认密码" required></div>
+                    <p class="login-btn"><input type="submit" value="注册" /></p>
+                </div>
+                <div class="right fr">
+                    <p>已有账户？<a href="login.html">直接登录！</a></p>
+                    <h1>赞美诗 - 热爱喜欢吉他的聚集地</h1>
+                </div>
+            </div>
+        </form>
+        <div class="text">
+            <h2>感谢上帝使得“赞美诗吉他谱网”上线！</h2>
+            <p>如果你有与我们一样的事工异象？</p>
+            <p>欢迎加入（六日音乐）“非营利”团队！</p>
+        </div>
+    </div>
+
+<!--页脚--------------------------------------------------------------------------------->
+    <div class="footer inner">
+        <ul>
+            <li><a href="#">网站首页</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">广告服务</a></li>
+            <li><a href="#">信息反馈</a></li>
+            <li><a href="#">RSS订阅 </a></li>
+            <li><a href="#">友情链接</a></li>
+        </ul>
+        <div class="bot clearfix">
+            <div class="logo fl">
+                <a href="index.html"><img src="../images/logo2.jpg"/></a>
+            </div>
+            <div class="copy fl">
+                <p>Copyright © 2011 Chapuw. All rights reserved.</p>
+                <p>赞美诗  版权所有 京ICP备11000091号-4站长统计</p>
+                <p>赞美诗 上的歌谱和资料均为网友提供或推荐收集整理而来，仅供学习和研究使用，版权归原作者或出版社所有。如有侵犯您的版权，请来信指出，我们立即改正删除</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
